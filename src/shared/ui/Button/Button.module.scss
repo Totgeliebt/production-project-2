@@ -16,6 +16,7 @@
     color: var(--primary-color);
     background: none;
 }
+
 .background {
     background: var(--bg-color);
     color: var(--primary-color);
@@ -31,6 +32,7 @@
 .square {
     padding: 0;
 }
+
 .square.size_m {
     width: var(--font-line-m);
     height: var(--font-line-m);
@@ -40,16 +42,20 @@
     width: var(--font-line-l);
     height: var(--font-line-l);
 }
+
 .square.size_xl {
     width: var(--font-line-xl);
     height: var(--font-line-xl);
 }
+
 .size_m {
     font: var(--font-m);
 }
+
 .size_l {
     font: var(--font-l);
 }
+
 .size_xl {
     font: var(--font-xl);
 }

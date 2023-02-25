@@ -27,6 +27,7 @@ jobs:
           key: node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: linting typescript
         run: npm run lint:ts
+        if: always()
 
   scss:
     runs-on: ubuntu-latest
@@ -48,6 +49,7 @@ jobs:
         run: npm i
       - name: linting css
         run: npm run lint:scss
+        if: always()
 
   testing:
     runs-on: ubuntu-latest
@@ -69,6 +71,7 @@ jobs:
         run: npm i
       - name: unit testing
         run: npm run test:unit
+        if: always()
 
   storybook:
     runs-on: ubuntu-latest
@@ -90,7 +93,10 @@ jobs:
         run: npm i
       - name: build production project
         run: npm run build:prod
+        if: always()
       - name: build storybook
         run: npm run storybook:build
+        if: always()
       - name: screenshot testing
         run: npm run test:ui:ci
+        if: always()
