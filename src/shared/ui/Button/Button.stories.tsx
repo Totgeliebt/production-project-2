@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 import { Button, ButtonSize, ButtonTheme } from './Button';
@@ -24,6 +24,13 @@ Clear.args = {
     children: 'Text',
     theme: ButtonTheme.CLEAR,
 };
+
+export const ClearInverted = Template.bind({});
+ClearInverted.args = {
+    children: 'Text',
+    theme: ButtonTheme.CLEAR_INVERTED,
+};
+
 export const Outline = Template.bind({});
 Outline.args = {
     children: 'Text',
