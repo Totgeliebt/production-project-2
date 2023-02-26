@@ -48,7 +48,7 @@ export const Modal = (props: ModalProps) => {
         [cls.opened]: isOpen,
         [cls.isClosing]: isClosing,
     };
-    //
+
     useEffect((): (() => void) => {
         if (isOpen) {
             window.addEventListener('keydown', onKeyDown);
