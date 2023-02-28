@@ -6,11 +6,11 @@
       "author": "typicode"
     }
   ],
-  "comments": [
+  "users": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "username": "some comment",
+      "password": 1
     }
   ],
   "profile": {
