@@ -30,7 +30,7 @@ export const Input = memo((props: InputProps) => {
             <input
                 autoFocus={autoFocus}
                 type={type}
-                value={value}
+                defaultValue={value}
                 placeholder={placeholder}
                 onChange={onChangeHandler}
                 className={cls.input}
