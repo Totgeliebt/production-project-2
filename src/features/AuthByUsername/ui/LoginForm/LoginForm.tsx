@@ -9,8 +9,10 @@ import {
     DynamicModuleLoader,
     ReducersList,
 } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import {
+    getLoginPassword,
+} from 'features/AuthByUsername/model/selectors/getLoginPassword/getLoginPassword';
 import { getLoginUsername } from '../../model/selectors/getLoginUsername/getLoginUsername';
-import { getLoginSPassword } from '../../model/selectors/getLoginPassword/getLoginPassword';
 import { getLoginIsLoading } from '../../model/selectors/getLoginIsLoading/getLoginIsLoading';
 import { getLoginError } from '../../model/selectors/getLoginError/getLoginError';
 import cls from './LoginForm.module.scss';
@@ -28,7 +30,7 @@ const initialReducers: ReducersList = {
 const LoginForm = memo(({ className }: LoginFormProps) => {
     const { t } = useTranslation();
     const username = useSelector(getLoginUsername);
-    const password = useSelector(getLoginSPassword);
+    const password = useSelector(getLoginPassword);
     const isLoading = useSelector(getLoginIsLoading);
     const error = useSelector(getLoginError);
     const dispatch = useDispatch();
