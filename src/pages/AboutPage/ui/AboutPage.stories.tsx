@@ -11,13 +11,11 @@ export default {
     },
 } as ComponentMeta<typeof AboutPage>;
 
-const Template: ComponentStory<typeof AboutPage> = (args) => <AboutPage {...args} />;
+const Template: ComponentStory<typeof AboutPage> = () => <AboutPage />;
 
 export const Light = Template.bind({});
 
-Light.args = {
-};
+Light.args = {};
 export const Dark = Template.bind({});
-Dark.args = {
-};
+Dark.args = {};
 Dark.decorators = [ThemeDecorator(Theme.DARK)];
