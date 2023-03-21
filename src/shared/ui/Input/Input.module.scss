@@ -4,8 +4,13 @@
 
 .input {
     width: 100%;
+    border: none;
 }
 
 ::placeholder {
     padding-left: 5px;
+}
+
+.readonly {
+    opacity: 0.7;
 }
