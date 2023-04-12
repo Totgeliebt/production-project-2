@@ -1,14 +1,14 @@
 .ProfileCard {
     padding: 20px;
     border: 2px solid var(--inverted-bg-color);
-    //width: 50%;
 }
 
 .input {
     margin-top: 10px;
 }
 
-.loading, .error {
+.loading,
+.error {
     display: flex;
     align-items: center;
     justify-content: center;
