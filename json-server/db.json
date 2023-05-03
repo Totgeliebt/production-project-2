@@ -102,6 +102,36 @@
       "text": "some comment3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "New comment",
+      "id": "nobG_Gs"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "another com",
+      "id": "GyO67s5"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "zcvbcv",
+      "id": "of0upqB"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "dfvsdfv",
+      "id": "-tCoXFZ"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "dfvsdfvzdfzdfvb",
+      "id": "ZHni6ty"
     }
   ],
   "users": [
@@ -110,24 +140,38 @@
       "username": "admin",
       "password": "123",
       "role": "ADMIN",
-      "avatar": "https://mobimg.b-cdn.net/v3/fetch/ef/ef5d5a59c4a4d9d1deb9a3722b744951.jpeg?w=1470&r=0.5625"
+      "avatar": "https://pixelbox.ru/wp-content/uploads/2020/12/ava-vk-cats-76.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
       "role": "USER",
-      "avatar": "https://i01.fotocdn.net/s124/b9891d757ed97c3e/public_pin_l/2826527811.jpg"
+      "avatar": "https://i.pinimg.com/originals/6f/f1/0b/6ff10bf8369bd21d5b82833b45e3b895.jpg"
     }
   ],
-  "profile": {
-    "first": "Nbv",
-    "lastname": "Ульби",
-    "age": 35,
-    "currency": "USD",
-    "country": "Ukraine",
-    "city": "Moscow",
-    "username": "admin213",
-    "avatar": "https://pixelbox.ru/wp-content/uploads/2022/05/smeshoy-kotik-avatar-pixelbox.ru-15.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Nbv",
+      "lastname": "Ульби",
+      "age": 35,
+      "currency": "USD",
+      "country": "Ukraine",
+      "city": "Kyiv",
+      "username": "admin213",
+      "avatar": "https://pixelbox.ru/wp-content/uploads/2020/12/ava-vk-cats-76.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Кися",
+      "lastname": "Котофеич",
+      "age": 5,
+      "currency": "USD",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "notadmin",
+      "avatar": "https://i.pinimg.com/originals/6f/f1/0b/6ff10bf8369bd21d5b82833b45e3b895.jpg"
+    }
+  ]
 }
