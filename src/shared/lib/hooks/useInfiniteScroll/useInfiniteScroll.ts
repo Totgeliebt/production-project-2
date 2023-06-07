@@ -13,9 +13,11 @@ export function useInfiniteScroll({
 }: UseInfiniteScrollOptions) {
     const observer = useRef<IntersectionObserver | null>(null);
     useEffect(() => {
+        const wrapperElement = wrapperRef.current;
+        const triggerElement = triggerRef.current;
         if (callback) {
             const options = {
-                root: wrapperRef.current,
+                root: wrapperElement,
             };
             observer.current = new IntersectionObserver(([entry]) => {
                 if (entry.isIntersecting) {
@@ -23,13 +25,13 @@ export function useInfiniteScroll({
                 }
             }, options);
 
-            observer.current.observe(triggerRef.current);
+            observer.current.observe(triggerElement);
         }
 
         return () => {
-            if (observer.current) {
+            if (observer.current && triggerElement) {
                 // eslint-disable-next-line react-hooks/exhaustive-deps
-                observer.current.unobserve(triggerRef.current);
+                observer.current.unobserve(triggerElement);
             }
         };
     }, [callback, triggerRef, wrapperRef]);
