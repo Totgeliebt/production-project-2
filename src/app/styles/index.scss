@@ -17,3 +17,23 @@ body {
 .content-page {
     display: flex;
 }
+
+.styled-scrollbars {
+    /* плашка-бегунок и фон */
+    scrollbar-color: #999 #333;
+}
+
+*::-webkit-scrollbar {
+    width: 12px; /* в основном для вертикальных полос прокрутки */
+    height: 8px; /* в основном для горизонтальных полос прокрутки */
+}
+
+*::-webkit-scrollbar-track { /* фон */
+    background: var(--card-bg);
+}
+
+*::-webkit-scrollbar-thumb { /* плашка-бегунок */
+    background: var(--inverted-primary-color);
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+}
