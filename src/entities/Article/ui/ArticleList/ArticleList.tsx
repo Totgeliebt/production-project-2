@@ -1,10 +1,10 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { HTMLAttributeAnchorTarget, memo } from 'react';
-import { ArticleItemSkeleton } from 'entities/Article/ui/ArticleItem/ArticleItemSkeleton';
 import { Text, TextSize } from 'shared/ui/Text/Text';
 import { List, ListRowProps, WindowScroller } from 'react-virtualized';
 import { PAGE_ID } from 'widgets/Page/Page';
+import { ArticleItemSkeleton } from '../ArticleItem/ArticleItemSkeleton';
 import { ArticleItem } from '../../ui/ArticleItem/ArticleItem';
 import cls from './ArticleList.module.scss';
 import { Article, ArticleView } from '../../model/types/article';
@@ -59,7 +59,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
         return (
             <div
                 key={key}
-                // style={style}
+                style={style}
                 className={cls.row}
             >
                 {items}
