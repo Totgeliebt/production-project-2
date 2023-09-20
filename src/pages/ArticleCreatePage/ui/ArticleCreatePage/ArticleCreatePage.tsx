@@ -12,9 +12,9 @@ export const ArticleCreatePage = memo((props: ArticleCreatePageProps) => {
     const { t } = useTranslation();
     return (
         // eslint-disable-next-line i18next/no-literal-string
-        <div className={classNames(cls.ArticleCreatePage, {}, [className])}>
+        <section className={classNames(cls.ArticleCreatePage, {}, [className])}>
             ARTICLE CREATE
             PAGE
-        </div>
+        </section>
     );
 });
