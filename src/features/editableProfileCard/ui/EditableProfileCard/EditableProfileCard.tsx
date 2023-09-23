@@ -26,7 +26,6 @@ import {
     getProfileIsLoading,
 } from '../../model/selectors/getProfileIsLoading/getProfileIsLoading';
 import { getProfileError } from '../../model/selectors/getProfileError/getProfileError';
-import cls from './EditableProfileCard.module.scss';
 
 interface EditableProfileCardProps {
     className?: string;
@@ -91,7 +90,7 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
 
     return (
         <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-            <VStack gap="8" max className={classNames(cls.EditableProfileCard, {}, [className])}>
+            <VStack gap="8" max className={classNames('', {}, [className])}>
                 <EditableProfileCardHeader />
                 {validateErrors?.length && validateErrors.map((err) => (
                     <Text

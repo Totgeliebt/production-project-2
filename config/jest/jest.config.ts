@@ -2,6 +2,7 @@
  * For a detailed explanation regarding each configuration property and type check, visit:
  * https://jestjs.io/docs/configuration
  */
+// @ts-ignore
 import path from 'path';
 
 export default {
@@ -39,6 +40,15 @@ export default {
         '\\.s?css$': 'identity-obj-proxy',
         '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx'),
     },
+    reporters: [
+        'default',
+        ['jest-html-reporters', {
+            publicPath: '<rootDir>/reports/unit',
+            filename: 'report.html',
+            openReport: true,
+            inlineSource: true,
+        }],
+    ],
     // All imported modules in your tests should be mocked automatically
     // automock: false,
 
