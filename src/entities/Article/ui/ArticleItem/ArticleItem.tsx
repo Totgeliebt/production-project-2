@@ -32,7 +32,6 @@ export const ArticleItem = memo((props: ArticleItemProps) => {
         article,
         target,
     } = props;
-
     const types = <Text text={article?.type?.join(', ')} className={cls.types} />;
     const views = (
         <>
@@ -61,7 +60,6 @@ export const ArticleItem = memo((props: ArticleItemProps) => {
                         <AppLink target={target} to={RoutePath.article_details + article.id}>
                             <Button>{t('Читать далее')}</Button>
                         </AppLink>
-
                         {views}
                     </div>
                 </Card>
